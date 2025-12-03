@@ -7,7 +7,7 @@ import os
 requests.packages.urllib3.disable_warnings()
 
 # --- Configuration Loading Function ---
-def load_config(config_file="/Users/sakosuri/Library/CloudStorage/OneDrive-Cisco/Laptop docs _08_08_2025/LLM project/config_int_util.yaml"):
+def load_config(config_file="<config.yaml file path>"): """Add the path of config.yaml file"""
     """Loads configuration from a YAML file."""
     if not os.path.exists(config_file):
         raise FileNotFoundError(f"Configuration file '{config_file}' not found. Please create it.")
