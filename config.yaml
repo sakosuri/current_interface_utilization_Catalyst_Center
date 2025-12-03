@@ -1,0 +1,18 @@
+dna_centers: # List of DNA Center instances
+  - name: "PrimaryDNAC"
+    ip: "<Primary-DNAC-ip-address"
+    username: "<username>"
+    password: "<password>"
+
+targets: # List of target groups, each associated with a DNA Center
+  - dna_center_name: "PrimaryDNAC" # References a 'name' from the dna_centers list
+    devices: # List of devices to monitor on PrimaryDNAC
+      - device_name: "<device1-hostname>"
+        interfaces: # List of interfaces for device1
+          - <interface1>"
+          - "<interface2>"
+          - "<interface3>"
+      - device_name: "<device2-hostname>"
+        interfaces: # List of interfaces for device2
+          - "<interface1>"
+          - "<interface2"
